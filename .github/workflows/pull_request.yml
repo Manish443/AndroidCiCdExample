@@ -1,8 +1,10 @@
-name: Run test
+name: Run test CiCd
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
+  push:
+      branches: [main]
 
 jobs:
     build:
